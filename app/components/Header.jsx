@@ -19,7 +19,7 @@ const HeaderWrapper = styled.nav`
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 3px;
-  align-items: center;
+  align-items: end;
 
   div {
     position: relative;
