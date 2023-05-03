@@ -34,14 +34,6 @@ const DescriptionWrapper = styled.div`
     .imageWrapper {
       display: flex;
       justify-content: center;
-      img {
-        position: relative;
-        object-fit: cover;
-        height: 30rem;
-        width: 25rem;
-        z-index: 9999;
-        border-radius: 4rem;
-      }
     }
   }
   @media (max-width: 1000px) {
@@ -50,16 +42,6 @@ const DescriptionWrapper = styled.div`
       .introtext {
         align-items: center;
         text-align: center;
-      }
-    }
-  }
-  @media (max-width: 500px) {
-    .contentWrapper {
-      .imageWrapper {
-        img {
-          height: 20rem;
-          width: 15rem;
-        }
       }
     }
   }
