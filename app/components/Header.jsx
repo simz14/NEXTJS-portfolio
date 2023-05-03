@@ -29,8 +29,12 @@ const Header = () => {
           </div>
           <div className="links ">
             <ButtonExtra>
-              <BsGithub />
-              <BsLinkedin />
+              <a href="https://github.com/simz14">
+                <BsGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/simona-zozu%C4%BEakov%C3%A1-003639249/">
+                <BsLinkedin />
+              </a>
             </ButtonExtra>
           </div>
         </nav>
