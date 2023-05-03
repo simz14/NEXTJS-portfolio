@@ -15,6 +15,7 @@ const DescriptionWrapper = styled.div`
     position: relative;
     z-index: 999;
     max-width: 640px;
+    align-self: center;
 
     .description {
       display: flex;

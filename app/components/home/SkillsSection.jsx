@@ -15,6 +15,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import Tools from "../Tools";
 
 const SkillsSectionWrapper = styled.div`
   width: 100%;
@@ -33,14 +34,19 @@ const SkillsSectionWrapper = styled.div`
     .content {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      .cvphoto {
-        position: relative;
-        object-fit: cover;
-        height: 30rem;
-        width: 25rem;
-        z-index: 9999;
-        border-radius: 4rem;
+      .imageWrapper {
+        display: flex;
+        justify-content: end;
+        .cvphoto {
+          position: relative;
+          object-fit: cover;
+          height: 30rem;
+          width: 25rem;
+          z-index: 9999;
+          border-radius: 4rem;
+        }
       }
+
       .boxes {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -53,8 +59,31 @@ const SkillsSectionWrapper = styled.div`
     }
 
     @media (max-width: 1000px) {
+      .content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        .imageWrapper {
+          display: flex;
+          justify-content: center;
+          .cvphoto {
+            height: 30rem;
+            width: 30rem;
+            border-radius: 3rem;
+          }
+        }
+      }
       .contentWrapper {
         gap: 3rem;
+      }
+    }
+    @media (max-width: 500px) {
+      .content {
+        .imageWrapper {
+          .cvphoto {
+            height: 20rem;
+            width: 20rem;
+          }
+        }
       }
     }
   }
@@ -67,9 +96,6 @@ const SkillsSection = () => {
         <div className="contentWrapper">
           <h1>MY SKILLS</h1>
           <div className="content">
-            <div>
-              <Image className="cvphoto" src={cvphoto} alt="simona" />
-            </div>
             <div className="boxes">
               <ColoredBox color="#9bd3d0">
                 <AiFillHtml5 />
@@ -112,9 +138,18 @@ const SkillsSection = () => {
                 <h4>JEST</h4>
               </ColoredBox>
             </div>
+            <div className="imageWrapper">
+              <Image className="cvphoto" src={cvphoto} alt="simona" />
+            </div>
           </div>
         </div>
       </Container>
+      <Tools>
+        <h3>STYLED COMPONENTS</h3>
+        <h3>MUI</h3>
+        <h3>REACT HOOK FORM</h3>
+        <h3>SEQUELIZE</h3>
+      </Tools>
     </SkillsSectionWrapper>
   );
 };
