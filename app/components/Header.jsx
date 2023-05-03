@@ -2,9 +2,9 @@
 
 import React from "react";
 import Container from "./Container";
-import githubIcon from "../../public/githubIcon.svg";
-import linkedinIcon from "../../public/linkedin.svg";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Image from "next/image";
+import ButtonExtra from "./ButtonExtra";
 
 const Header = () => {
   return (
@@ -27,22 +27,19 @@ const Header = () => {
               <span>CONTACT</span>
             </div>
           </div>
-          <div className="links">
-            <div className="line">
-              <Image src={githubIcon} alt="github" />
-            </div>
-            <div className="line">
-              <Image src={linkedinIcon} alt="linkedin" />
-            </div>
+          <div className="links ">
+            <ButtonExtra>
+              <BsGithub />
+              <BsLinkedin />
+            </ButtonExtra>
           </div>
         </nav>
       </Container>
       <style jsx>{`
         .headerWrapper {
           position: absolute;
-          top: 0;
-          left: 0;
-          z-index: 999;
+          bottom: 90%;
+          z-index: 9999;
           width: 100%;
           .contentWrapper {
             width: 100%;
@@ -79,8 +76,13 @@ const Header = () => {
             & .sections {
               gap: 5rem;
             }
-            & .links {
-              gap: 1rem;
+
+            & .home {
+              & span {
+                font-size: 20px;
+                font-weight: 900;
+                color: #ff651c;
+              }
             }
 
             & .sections,

@@ -11,16 +11,33 @@ const IntroWrapper = styled.div`
   .contentWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 59px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     position: relative;
-    min-height: 40rem;
+    z-index: 999;
+    .introtext {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 999;
+      gap: 1rem;
+
+      span {
+        border-bottom: 1px solid #ff651c;
+      }
+    }
   }
   .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       position: relative;
-      height: auto;
-      width: 20rem;
+      object-fit: cover;
+      height: 25rem;
+      width: 25rem;
       z-index: 9999;
+      border-radius: 50%;
     }
   }
   .images::after {
@@ -36,7 +53,14 @@ const IntroWrapper = styled.div`
     transform: rotate(-45deg);
   }
   @media (max-width: 1000px) {
-    grid-template-columns: 1fr;
+    .contentWrapper {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      .introtext {
+        align-items: center;
+        text-align: center;
+      }
+    }
   }
   @media (max-width: 750px) {
     .images::after {
@@ -46,6 +70,14 @@ const IntroWrapper = styled.div`
       top: 0;
     }
   }
+  @media (max-width: 500px) {
+    .images {
+      img {
+        height: 20rem;
+        width: 20rem;
+      }
+    }
+  }
 `;
 
 const IntroSection = () => {
@@ -53,12 +85,12 @@ const IntroSection = () => {
     <IntroWrapper>
       <Container>
         <div className="contentWrapper">
-          <div>
+          <div className="introtext">
             <h4>HI, MY NAME IS SIMONA</h4>
             <h1>
-              I'm a
+              I love
               <Typewriter
-                words={[" Programmer", " Programming enthusiast"]}
+                words={[" Programming", " Learning"]}
                 loop={true}
                 cursor
                 cursorStyle="|"
