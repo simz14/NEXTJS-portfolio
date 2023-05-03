@@ -2,6 +2,8 @@
 import Container from "../Container";
 import styled from "styled-components";
 import { Typewriter } from "react-simple-typewriter";
+import simonagreen from "../../../public/simonagreen.jpg";
+import Image from "next/image";
 
 const IntroWrapper = styled.div`
   background-color: #fff9ec;
@@ -13,7 +15,14 @@ const IntroWrapper = styled.div`
     position: relative;
     min-height: 40rem;
   }
-
+  .images {
+    img {
+      position: relative;
+      height: auto;
+      width: 20rem;
+      z-index: 9999;
+    }
+  }
   .images::after {
     background: rgba(254, 196, 72, 0.4);
     border-radius: 50px;
@@ -60,7 +69,9 @@ const IntroSection = () => {
             </h1>
             <p>Based in Trnava, Slovakia</p>
           </div>
-          <div className="images"></div>
+          <div className="images">
+            <Image src={simonagreen} alt="simona" />
+          </div>
         </div>
       </Container>
     </IntroWrapper>
