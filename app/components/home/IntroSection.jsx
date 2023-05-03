@@ -1,6 +1,7 @@
 "use client";
 import Container from "../Container";
 import styled from "styled-components";
+import { Typewriter } from "react-simple-typewriter";
 
 const IntroWrapper = styled.div`
   background-color: #fff9ec;
@@ -44,7 +45,20 @@ const IntroSection = () => {
       <Container>
         <div className="contentWrapper">
           <div>
-            <h4>Hi, my name is Simona</h4>
+            <h4>HI, MY NAME IS SIMONA</h4>
+            <h1>
+              I'm a
+              <Typewriter
+                words={[" Programmer", " Programming enthusiast"]}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={2000}
+              />
+            </h1>
+            <p>Based in Trnava, Slovakia</p>
           </div>
           <div className="images"></div>
         </div>

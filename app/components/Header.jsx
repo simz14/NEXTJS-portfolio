@@ -7,24 +7,26 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <Container>
-      <nav className="headerWrapper">
-        <div>
-          <span>HOME</span>
-        </div>
-        <div className="hide">
-          <span>SKILLS</span>
-        </div>
-        <div className="hide">
-          <span>PORTFOLIO</span>
-        </div>
-        <div className="hide">
-          <span>CONTACT</span>
-        </div>
-        <div>
-          <Image src={githubIcon} alt="github" />
-        </div>
-      </nav>
+    <div className="headerWrapper">
+      <Container>
+        <nav className="headerWrapper">
+          <div>
+            <span>HOME</span>
+          </div>
+          <div className="hide">
+            <span>SKILLS</span>
+          </div>
+          <div className="hide">
+            <span>PORTFOLIO</span>
+          </div>
+          <div className="hide">
+            <span>CONTACT</span>
+          </div>
+          <div>
+            <Image src={githubIcon} alt="github" />
+          </div>
+        </nav>
+      </Container>
       <style jsx>{`
         .headerWrapper {
           position: absolute;
@@ -76,7 +78,7 @@ const Header = () => {
           }
         }
       `}</style>
-    </Container>
+    </div>
   );
 };
 
