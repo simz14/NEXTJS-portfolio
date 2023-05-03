@@ -1,7 +1,6 @@
 "use client";
-
-const { default: styled } = require("styled-components");
-const { default: Container } = require("../Container");
+import Container from "../Container";
+import styled from "styled-components";
 
 const IntroWrapper = styled.div`
   background-color: #fff9ec;
