@@ -2,18 +2,22 @@
 
 import React, { useState } from "react";
 import { useServerInsertedHTML } from "next/navigation";
-import { StyleRegistry, createStyleRegistry } from "styled-jsx";
+import { ServerStyleSheet, StyleSheetManager } from "styled-components";
 
-const StyledJsxRegistry = ({ children }) => {
-  const [jsxStyleRegistry] = useState(() => createStyleRegistry());
+const StyledComponentsRegistry = ({ children }) => {
+  const [styledComponentsStyleSheet] = useState(() => new ServerStyleSheet());
 
   useServerInsertedHTML(() => {
-    const styles = jsxStyleRegistry.styles();
-    jsxStyleRegistry.flush();
+    const styles = styledComponentsStyleSheet.getStyleElement();
+    styledComponentsStyleSheet.instance.clearTag();
     return <>{styles}</>;
   });
 
-  return <StyleRegistry registry={jsxStyleRegistry}>{children}</StyleRegistry>;
+  return (
+    <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
+      {children}
+    </StyleSheetManager>
+  );
 };
 
-export default StyledJsxRegistry;
+export default StyledComponentsRegistry;
