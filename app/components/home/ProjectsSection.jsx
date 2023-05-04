@@ -88,7 +88,7 @@ const ProjectsSection = () => {
             />
             <ButtonExtra>
               <a href="https://github.com/simz14">
-                <h3>See more</h3>
+                <h2>See more</h2>
               </a>
             </ButtonExtra>
           </div>
