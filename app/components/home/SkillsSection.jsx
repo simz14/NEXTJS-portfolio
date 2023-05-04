@@ -47,6 +47,9 @@ const SkillsSectionWrapper = styled.div`
     padding: 50px 0;
     position: relative;
     z-index: 999;
+    .title {
+      color: #ff651c;
+    }
 
     .content {
       display: grid;
@@ -111,7 +114,7 @@ const SkillsSection = () => {
     <SkillsSectionWrapper>
       <Container>
         <div className="contentWrapper">
-          <h1>MY SKILLS</h1>
+          <h1 className="title">MY SKILLS</h1>
           <div className="content">
             <div className="boxes">
               <ColoredBox color="#9bd3d0">
