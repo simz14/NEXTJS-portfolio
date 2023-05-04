@@ -51,6 +51,8 @@ const ProjectsSection = () => {
               description={
                 "Application for managing dog shelter with all data and functionality needed, providing statistics and intuitive, ease-to-use interface."
               }
+              github={"https://github.com/simz14/DoggyBoard"}
+              demo={"https://doggy-board.vercel.app"}
             />
             <ProjectBox
               image={happytails}
@@ -59,6 +61,8 @@ const ProjectsSection = () => {
               description={
                 "Dog shelter application that makes it easy to find and adopt your perfect companion. With a user-friendly interface you can quickly connect with shelter and start your journey towards adopting a loving furry friend."
               }
+              github={"https://github.com/simz14/HappyTails"}
+              demo={"https://happy-tails-eosin.vercel.app/"}
             />
             <ProjectBox
               image={greenBay}
@@ -67,6 +71,8 @@ const ProjectsSection = () => {
               description={
                 "Ecommerce application that provides a user-friendly platform for customers to browse and purchase products online, while offering sellers a convenient way to manage and sell their inventory."
               }
+              github={"https://github.com/simz14/greenBay"}
+              demo={"https://green-bay-v1.vercel.app/"}
             />
             <ButtonExtra>
               <a href="https://github.com/simz14">

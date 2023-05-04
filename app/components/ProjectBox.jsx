@@ -11,6 +11,14 @@ const BoxWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     gap: 5rem;
+    .buttonsWrapper {
+      display: flex;
+      gap: 1rem;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
     .firstImage {
       display: none;
     }
@@ -50,7 +58,14 @@ const BoxWrapper = styled.div`
   }
 `;
 
-const ProjectBox = ({ image, title, description, link, imageFirst }) => {
+const ProjectBox = ({
+  image,
+  title,
+  description,
+  github,
+  demo,
+  imageFirst,
+}) => {
   return (
     <BoxWrapper>
       {imageFirst ? (
@@ -59,9 +74,18 @@ const ProjectBox = ({ image, title, description, link, imageFirst }) => {
           <div className="text">
             <h2>{title}</h2>
             <span>{description}</span>
-            <ButtonExtra>
-              <h3>Detail</h3>
-            </ButtonExtra>
+            <div className="buttonsWrapper">
+              <ButtonExtra>
+                <a target="_blank" href={github}>
+                  <h3>GitHub</h3>
+                </a>
+              </ButtonExtra>
+              <ButtonExtra>
+                <a target="_blank" href={demo}>
+                  <h3>Demo</h3>
+                </a>
+              </ButtonExtra>
+            </div>
           </div>
         </div>
       ) : (
@@ -70,9 +94,18 @@ const ProjectBox = ({ image, title, description, link, imageFirst }) => {
           <div className="text">
             <h2>{title}</h2>
             <span>{description}</span>
-            <ButtonExtra>
-              <h3>Detail</h3>
-            </ButtonExtra>
+            <div className="buttonsWrapper">
+              <ButtonExtra>
+                <a target="_blank" href={github}>
+                  <h3>GitHub</h3>
+                </a>
+              </ButtonExtra>
+              <ButtonExtra>
+                <a target="_blank" href={demo}>
+                  <h3>Demo</h3>
+                </a>
+              </ButtonExtra>
+            </div>
           </div>
           <Image className="lastImage" src={image} alt="project" />
         </div>
