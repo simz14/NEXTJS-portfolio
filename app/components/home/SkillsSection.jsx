@@ -47,6 +47,7 @@ const SkillsSectionWrapper = styled.div`
     padding: 50px 0;
     position: relative;
     z-index: 999;
+    gap: 3rem;
     .title {
       color: #ff651c;
     }
@@ -81,7 +82,7 @@ const SkillsSectionWrapper = styled.div`
     @media (max-width: 1000px) {
       .content {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 4rem;
         .imageWrapper {
           display: flex;
           justify-content: center;

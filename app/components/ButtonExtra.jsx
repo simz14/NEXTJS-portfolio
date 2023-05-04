@@ -13,6 +13,10 @@ const StyledButton = styled.button`
   color: #fff;
   cursor: pointer;
   transition: 0.3s ease;
+  a {
+    text-decoration: none;
+    color: white;
+  }
   svg {
     cursor: pointer;
     width: 1.3rem;
