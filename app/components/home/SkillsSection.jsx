@@ -8,12 +8,20 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import {
   SiExpress,
+  SiGit,
   SiJavascript,
   SiJest,
+  SiMui,
   SiMysql,
   SiReact,
+  SiReacthookform,
+  SiScrollreveal,
+  SiSequelize,
+  SiStyledcomponents,
+  SiSwiper,
   SiTypescript,
 } from "react-icons/si";
+import { GiDonut } from "react-icons/gi";
 import { TbBrandNextjs } from "react-icons/tb";
 import Tools from "../Tools";
 
@@ -23,6 +31,14 @@ const SkillsSectionWrapper = styled.div`
   background-image: url("./bg-effect.png");
   background-repeat: no-repeat;
   background-size: cover;
+  .child {
+    display: flex;
+    gap: 0.5rem;
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
 
   .contentWrapper {
     width: 100%;
@@ -31,6 +47,7 @@ const SkillsSectionWrapper = styled.div`
     padding: 50px 0;
     position: relative;
     z-index: 999;
+
     .content {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -145,10 +162,38 @@ const SkillsSection = () => {
         </div>
       </Container>
       <Tools>
-        <h3>STYLED COMPONENTS</h3>
-        <h3>MUI</h3>
-        <h3>REACT HOOK FORM</h3>
-        <h3>SEQUELIZE</h3>
+        <div className="child">
+          <SiStyledcomponents />
+          <h5>STYLED COMPONENTS</h5>
+        </div>
+        <div className="child">
+          <SiMui />
+          <h5>MUI</h5>
+        </div>
+        <div className="child">
+          <SiReacthookform />
+          <h5>REACT HOOK FORM</h5>
+        </div>
+        <div className="child">
+          <SiSequelize />
+          <h5>SEQUELIZE</h5>
+        </div>
+        <div className="child">
+          <SiSwiper />
+          <h5>SWIPER</h5>
+        </div>
+        <div className="child">
+          <SiScrollreveal />
+          <h5>SCROLLREVEALJS</h5>
+        </div>
+        <div className="child">
+          <SiGit />
+          <h5>GIT</h5>
+        </div>
+        <div className="child">
+          <GiDonut />
+          <h5>SWEET ALERT</h5>
+        </div>
       </Tools>
     </SkillsSectionWrapper>
   );

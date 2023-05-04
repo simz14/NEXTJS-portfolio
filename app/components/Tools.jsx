@@ -13,9 +13,12 @@ const Tools = ({ children }) => {
           display: flex;
           padding: 10px;
           .children {
+            display: flex;
+            flex-wrap: wrap;
             width: 100%;
             color: white;
-            justify-content: space-between;
+            gap: 1rem;
+            justify-content: space-around;
           }
         }
       `}</style>
