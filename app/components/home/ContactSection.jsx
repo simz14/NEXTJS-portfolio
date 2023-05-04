@@ -3,6 +3,7 @@ import ColoredBox from "../ColoredBox";
 import Container from "../Container";
 import styled from "styled-components";
 import { FaEnvelope, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
+import ContactForm from "../ContactForm";
 
 const SkillsSectionWrapper = styled.div`
   width: 100%;
@@ -19,12 +20,17 @@ const SkillsSectionWrapper = styled.div`
     position: relative;
     z-index: 999;
     gap: 3rem;
-    .contact {
+    .contacts {
       display: flex;
-      align-items: center;
-      gap: 1rem;
-      h4 {
-        color: white;
+      flex-direction: column;
+      justify-content: space-around;
+      .contact {
+        display: flex;
+        align-items: start;
+        gap: 1rem;
+        h4 {
+          color: white;
+        }
       }
     }
 
@@ -33,15 +39,20 @@ const SkillsSectionWrapper = styled.div`
     }
 
     .content {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
     }
   }
-  @media (max-width: 700px) {
-    .content {
-      flex-direction: column;
-      gap: 1rem;
+  @media (max-width: 1000px) {
+    .contentWrapper {
+      .content {
+        grid-template-columns: 1fr;
+      }
+      .contacts {
+        display: flex;
+        gap: 1rem;
+      }
     }
   }
 `;
@@ -53,23 +64,26 @@ const ContactSection = () => {
         <div className="contentWrapper">
           <h1 className="title">CONTACT ME</h1>
           <div className="content">
-            <div className="contact">
-              <ColoredBox color={"#fec447"}>
-                <FaPhoneAlt />
-              </ColoredBox>
-              <h4>+421 917 898 084</h4>
-            </div>
-            <div className="contact">
-              <ColoredBox color={"#feccb5"}>
-                <FaEnvelope />
-              </ColoredBox>
-              <h4>szozulakova@gmail.com</h4>
-            </div>
-            <div className="contact">
-              <ColoredBox color={"#7eb6d8"}>
-                <FaLinkedinIn />
-              </ColoredBox>
-              <h4>Simona Zozuľaková</h4>
+            <ContactForm />
+            <div className="contacts">
+              <div className="contact">
+                <ColoredBox color={"#fec447"}>
+                  <FaPhoneAlt />
+                </ColoredBox>
+                <h4>+421 917 898 084</h4>
+              </div>
+              <div className="contact">
+                <ColoredBox color={"#feccb5"}>
+                  <FaEnvelope />
+                </ColoredBox>
+                <h4>szozulakova@gmail.com</h4>
+              </div>
+              <div className="contact">
+                <ColoredBox color={"#7eb6d8"}>
+                  <FaLinkedinIn />
+                </ColoredBox>
+                <h4>Simona Zozuľaková</h4>
+              </div>
             </div>
           </div>
         </div>

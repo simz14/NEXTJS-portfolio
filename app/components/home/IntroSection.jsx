@@ -49,7 +49,6 @@ const IntroWrapper = styled.div`
     position: absolute;
     right: -16%;
     top: -19%;
-
     transform: rotate(-45deg);
   }
   @media (max-width: 1000px) {

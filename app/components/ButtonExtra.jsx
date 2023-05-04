@@ -2,7 +2,7 @@
 
 import styled from "styled-components";
 
-const StyledButton = styled.button`
+const StyledButton = styled.div`
   display: flex;
   border: none;
   padding: 8px 20px;
@@ -13,6 +13,11 @@ const StyledButton = styled.button`
   color: #fff;
   cursor: pointer;
   transition: 0.3s ease;
+  :hover {
+    background: #373737;
+    border-color: #373737;
+    box-shadow: 6px 6px 0 -2px #ff651c;
+  }
   a {
     text-decoration: none;
     color: white;
@@ -27,16 +32,9 @@ const StyledButton = styled.button`
   svg:hover {
     color: #ff651c;
   }
-
-  :hover {
-    background: #373737;
-    border-color: #373737;
-    box-shadow: 6px 6px 0 -2px #ff651c;
-  }
 `;
-
-const ButtonExtra = ({ children }) => {
-  return <StyledButton>{children}</StyledButton>;
+const ButtonExtra = ({ children, onClick }) => {
+  return <StyledButton onClick={onClick}>{children}</StyledButton>;
 };
 
 export default ButtonExtra;
