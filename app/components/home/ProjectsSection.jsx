@@ -27,11 +27,23 @@ const ProjectsSectionWrapper = styled.div`
       flex-direction: column;
       gap: 4rem;
       align-items: center;
-    }
 
-    @media (max-width: 1000px) {
-      .contentWrapper {
-        gap: 3rem;
+      div:nth-child(even) {
+        .box {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .contentWrapper {
+      .content {
+        div:nth-child(even) {
+          .box {
+            flex-direction: column;
+          }
+        }
       }
     }
   }

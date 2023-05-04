@@ -7,6 +7,9 @@ import styled from "styled-components";
 const BoxWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
   .box {
     display: flex;
     justify-content: space-around;
@@ -58,58 +61,28 @@ const BoxWrapper = styled.div`
   }
 `;
 
-const ProjectBox = ({
-  image,
-  title,
-  description,
-  github,
-  demo,
-  imageFirst,
-}) => {
+const ProjectBox = ({ image, title, description, github, demo }) => {
   return (
     <BoxWrapper>
-      {imageFirst ? (
-        <div className="box">
-          <Image src={image} alt="project" />
-          <div className="text">
-            <h2>{title}</h2>
-            <span>{description}</span>
-            <div className="buttonsWrapper">
-              <ButtonExtra>
-                <a target="_blank" href={github}>
-                  <h3>GitHub</h3>
-                </a>
-              </ButtonExtra>
-              <ButtonExtra>
-                <a target="_blank" href={demo}>
-                  <h3>Demo</h3>
-                </a>
-              </ButtonExtra>
-            </div>
+      <div className="box">
+        <Image src={image} alt="project" />
+        <div className="text">
+          <h2>{title}</h2>
+          <span>{description}</span>
+          <div className="buttonsWrapper">
+            <ButtonExtra>
+              <a target="_blank" href={github}>
+                <h3>GitHub</h3>
+              </a>
+            </ButtonExtra>
+            <ButtonExtra>
+              <a target="_blank" href={demo}>
+                <h3>Demo</h3>
+              </a>
+            </ButtonExtra>
           </div>
         </div>
-      ) : (
-        <div className="box">
-          <Image className="firstImage" src={image} alt="project" />
-          <div className="text">
-            <h2>{title}</h2>
-            <span>{description}</span>
-            <div className="buttonsWrapper">
-              <ButtonExtra>
-                <a target="_blank" href={github}>
-                  <h3>GitHub</h3>
-                </a>
-              </ButtonExtra>
-              <ButtonExtra>
-                <a target="_blank" href={demo}>
-                  <h3>Demo</h3>
-                </a>
-              </ButtonExtra>
-            </div>
-          </div>
-          <Image className="lastImage" src={image} alt="project" />
-        </div>
-      )}
+      </div>
     </BoxWrapper>
   );
 };
