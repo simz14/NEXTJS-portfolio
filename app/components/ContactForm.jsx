@@ -44,23 +44,45 @@ const ContactForm = () => {
     <ContactWrapper>
       <h2>Get in touch</h2>
       <div className="twoinline">
-        <TextField {...register("name")} label="Name" variant="outlined" />
-        <TextField {...register("email")} label="Email" variant="outlined" />
+        <TextField
+          {...register("name", {
+            required: "Name is required",
+          })}
+          label="Name"
+          variant="outlined"
+          error={errors.name ? true : false}
+          helperText={errors.name?.message}
+        />
+        <TextField
+          {...register("email", {
+            required: "Email is required",
+          })}
+          label="Email"
+          variant="outlined"
+          error={errors.email ? true : false}
+          helperText={errors.email?.message}
+        />
       </div>
 
       <TextField
         {...register("subject", {
-          required: { message: "Subject is required" },
+          required: "Subject is required",
         })}
         label="Subject"
         variant="outlined"
+        error={errors.subject ? true : false}
+        helperText={errors.subject?.message}
       />
       <TextField
         multiline
         minRows={3}
-        {...register("message")}
+        {...register("message", {
+          required: "Message is required",
+        })}
         label="Message"
         variant="outlined"
+        error={errors.message ? true : false}
+        helperText={errors.message?.message}
       />
       <ButtonExtra onClick={handleSubmit(handleClickSend)}>
         <h2>Send</h2>
