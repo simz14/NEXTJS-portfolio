@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ButtonExtra from "./ButtonExtra";
 import styled from "styled-components";
 
@@ -13,7 +13,7 @@ const BoxWrapper = styled.div`
   .box {
     display: flex;
     justify-content: space-around;
-    gap: 5rem;
+    gap: 1rem;
     .buttonsWrapper {
       display: flex;
       gap: 1rem;
@@ -61,7 +61,7 @@ const BoxWrapper = styled.div`
   }
 `;
 
-const ProjectBox = ({ image, title, description, github, demo }) => {
+const ProjectBox = ({ image, title, description, github, demo, data }) => {
   return (
     <BoxWrapper>
       <div className="box">
@@ -69,6 +69,16 @@ const ProjectBox = ({ image, title, description, github, demo }) => {
         <div className="text">
           <h2>{title}</h2>
           <span>{description}</span>
+
+          <div>
+            {Object.entries(data).map((item) => {
+              return (
+                <div key={data[1]}>
+                  {item[0]} - {item[1]} lines
+                </div>
+              );
+            })}
+          </div>
           <div className="buttonsWrapper">
             <ButtonExtra>
               <a target="_blank" href={github}>

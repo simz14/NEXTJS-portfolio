@@ -25,7 +25,7 @@ const ProjectsSectionWrapper = styled.div`
     .content {
       display: flex;
       flex-direction: column;
-      gap: 4rem;
+      gap: 5rem;
       align-items: center;
 
       div:nth-child(even) {
@@ -49,7 +49,8 @@ const ProjectsSectionWrapper = styled.div`
   }
 `;
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
+  console.log("project");
   return (
     <ProjectsSectionWrapper>
       <Container>
@@ -57,6 +58,7 @@ const ProjectsSection = () => {
           <h1 className="title">LASTEST PROJECTS</h1>
           <div className="content">
             <ProjectBox
+              data={doggyboardData}
               image={doggyboard}
               imageFirst={true}
               title={"DoggyBoard"}
@@ -67,6 +69,7 @@ const ProjectsSection = () => {
               demo={"https://doggy-board.vercel.app"}
             />
             <ProjectBox
+              data={happyTailsData}
               image={happytails}
               imageFirst={false}
               title={"HappyTails"}
@@ -77,6 +80,7 @@ const ProjectsSection = () => {
               demo={"https://happy-tails-eosin.vercel.app/"}
             />
             <ProjectBox
+              data={greenBayData}
               image={greenBay}
               imageFirst={true}
               title={"GreenBay"}
