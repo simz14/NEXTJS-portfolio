@@ -13,7 +13,7 @@ const BoxWrapper = styled.div`
   .box {
     display: flex;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 8rem;
     .buttonsWrapper {
       display: flex;
       gap: 1rem;
@@ -31,6 +31,38 @@ const BoxWrapper = styled.div`
       justify-content: space-around;
       align-items: flex-start;
       gap: 1rem;
+      .pulsingBox {
+        display: flex;
+        align-items: center;
+
+        .pulsing {
+          background: #ff651c;
+          border-radius: 50%;
+          height: 10px;
+          width: 10px;
+          margin: 5px;
+          box-shadow: 0 0 0 0 #ff651c;
+          transform: scale(1);
+          animation: pulse 2s infinite;
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 #ff641ca6;
+        }
+
+        70% {
+          transform: scale(1);
+          box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        }
+
+        100% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+      }
       .badges {
         display: flex;
         gap: 0.5rem;
@@ -60,7 +92,7 @@ const BoxWrapper = styled.div`
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      gap: 5rem;
+      gap: 1rem;
       .firstImage {
         display: block;
       }
@@ -104,8 +136,15 @@ const ProjectBox = ({
           </div>
           <h2>{title}</h2>
           <span>{description}</span>
-          <div>{getLines(Object.entries(data.languages))} lines of code</div>
-          <div>{data.commits} commits</div>
+          <div className="pulsingBox">
+            <div class="pulsing"></div>
+            <div>{getLines(Object.entries(data.languages))} lines of code</div>
+          </div>
+          <div className="pulsingBox">
+            <div class="pulsing"></div>
+            <div>{data.commits} commits</div>
+          </div>
+
           <div className="buttonsWrapper">
             <ButtonExtra>
               <a target="_blank" href={github}>

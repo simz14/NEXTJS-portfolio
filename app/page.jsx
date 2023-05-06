@@ -84,7 +84,7 @@ const Home = async () => {
   const doggyboardData = await fetchDoggyBoard();
   const happyTailsData = await fetchHappyTails();
   const greenBayData = await fetchGreenBay();
-  console.log(doggyboardData, happyTailsData, greenBayData);
+
   return (
     <div>
       <IntroSection />

@@ -26,7 +26,7 @@ const ProjectsSectionWrapper = styled.div`
     .content {
       display: flex;
       flex-direction: column;
-      gap: 5rem;
+      gap: 8rem;
       align-items: center;
 
       div:nth-child(even) {
@@ -51,7 +51,6 @@ const ProjectsSectionWrapper = styled.div`
 `;
 
 const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
-  console.log("project");
   return (
     <ProjectsSectionWrapper>
       <Container>
