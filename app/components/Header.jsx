@@ -2,7 +2,7 @@
 
 import React from "react";
 import Container from "./Container";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+//import { BsGithub, BsLinkedin } from "react-icons/bs";
 import ButtonExtra from "./ButtonExtra";
 import styled from "styled-components";
 
@@ -97,12 +97,11 @@ const Header = () => {
           </div>
           <div className="links ">
             <ButtonExtra>
-              <a href="https://github.com/simz14">
-                <BsGithub />
-              </a>
-              <a href="https://www.linkedin.com/in/simona-zozu%C4%BEakov%C3%A1-003639249/">
-                <BsLinkedin />
-              </a>
+              <a target="blank" href="https://github.com/simz14"></a>
+              <a
+                target="blank"
+                href="https://www.linkedin.com/in/simona-zozu%C4%BEakov%C3%A1-003639249/"
+              ></a>
             </ButtonExtra>
           </div>
         </nav>

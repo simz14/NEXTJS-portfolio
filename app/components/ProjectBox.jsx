@@ -31,6 +31,20 @@ const BoxWrapper = styled.div`
       justify-content: space-around;
       align-items: flex-start;
       gap: 1rem;
+      .badges {
+        display: flex;
+        gap: 0.5rem;
+        .badge {
+          background: rgba(255, 101, 28, 0.2);
+          border-radius: 30px;
+          color: #373737;
+          display: inline-block;
+          font-size: 12px;
+          letter-spacing: 3px;
+          padding: 8px 20px;
+          text-transform: uppercase;
+        }
+      }
     }
     img {
       height: 18rem;
@@ -61,24 +75,37 @@ const BoxWrapper = styled.div`
   }
 `;
 
-const ProjectBox = ({ image, title, description, github, demo, data }) => {
+const ProjectBox = ({
+  image,
+  title,
+  description,
+  github,
+  demo,
+  data,
+  tech,
+}) => {
+  const getLines = (array) => {
+    let sum = 0;
+    array.map((item) => {
+      sum += item[1];
+    });
+    return sum;
+  };
+
   return (
     <BoxWrapper>
       <div className="box">
         <Image src={image} alt="project" />
         <div className="text">
-          <h2>{title}</h2>
-          <span>{description}</span>
-
-          <div>
-            {Object.entries(data).map((item) => {
-              return (
-                <div key={data[1]}>
-                  {item[0]} - {item[1]} lines
-                </div>
-              );
+          <div className="badges">
+            {tech.map((item) => {
+              return <div className="badge">{item.name}</div>;
             })}
           </div>
+          <h2>{title}</h2>
+          <span>{description}</span>
+          <div>{getLines(Object.entries(data.languages))} lines of code</div>
+          <div>{data.commits} commits</div>
           <div className="buttonsWrapper">
             <ButtonExtra>
               <a target="_blank" href={github}>

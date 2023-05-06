@@ -6,6 +6,7 @@ import happytails from "../../../public/happytails.png";
 import doggyboard from "../../../public/doggyboard.png";
 import greenBay from "../../../public/greenBay.png";
 import ButtonExtra from "../ButtonExtra";
+//import { SiMui, SiReact, SiNodedotjs } from "react-icons/si";
 
 const ProjectsSectionWrapper = styled.div`
   width: 100%;
@@ -58,6 +59,7 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
           <h1 className="title">LASTEST PROJECTS</h1>
           <div className="content">
             <ProjectBox
+              tech={[{ name: "ReactJS" }, { name: "NodeJS" }, { name: "Mui" }]}
               data={doggyboardData}
               image={doggyboard}
               imageFirst={true}
@@ -69,6 +71,7 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
               demo={"https://doggy-board.vercel.app"}
             />
             <ProjectBox
+              tech={[{ name: "ReactJS" }, { name: "Mui" }]}
               data={happyTailsData}
               image={happytails}
               imageFirst={false}
@@ -80,6 +83,7 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
               demo={"https://happy-tails-eosin.vercel.app/"}
             />
             <ProjectBox
+              tech={[{ name: "ReactJS" }, { name: "NodeJS" }, { name: "Mui" }]}
               data={greenBayData}
               image={greenBay}
               imageFirst={true}

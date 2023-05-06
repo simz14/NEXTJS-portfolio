@@ -23,5 +23,9 @@
     "react-simple-typewriter": "^5.0.1",
     "styled-components": "^5.3.10",
     "styled-jsx": "^5.1.2"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.4.1",
+    "cross-env": "^7.0.3"
   }
 }

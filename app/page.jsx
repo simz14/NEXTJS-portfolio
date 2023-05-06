@@ -5,42 +5,79 @@ import DescriptionSection from "./components/home/DescriptionSection";
 import SkillsSection from "./components/home/SkillsSection";
 import ProjectsSection from "./components/home/ProjectsSection";
 import ContactSection from "./components/home/ContactSection";
+import dotenv from "dotenv";
+dotenv.config();
 
 const fetchDoggyBoard = async () => {
-  const response = await fetch(
+  const responseLanguages = await fetch(
     "https://api.github.com/repos/simz14/DoggyBoard/languages",
     {
       header: {
-        Authorization:
-          "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",
+        Authorization: process.env.TOKEN,
       },
     }
   );
-  return response.json();
+  const responseCommits = await fetch(
+    "https://api.github.com/repos/simz14/DoggyBoard/commits?page=1&per_page=200",
+    {
+      header: {
+        Authorization: process.env.TOKEN,
+      },
+    }
+  );
+  const commits = await responseCommits.json();
+  return {
+    languages: await responseLanguages.json(),
+    commits: commits.length,
+  };
 };
+
 const fetchHappyTails = async () => {
-  const response = await fetch(
+  const responseLanguages = await fetch(
     "https://api.github.com/repos/simz14/HappyTails/languages",
     {
       header: {
-        Authorization:
-          "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",
+        Authorization: process.env.TOKEN,
       },
     }
   );
-  return response.json();
+  const responseCommits = await fetch(
+    "https://api.github.com/repos/simz14/HappyTails/commits?page=1&per_page=200",
+    {
+      header: {
+        Authorization: process.env.TOKEN,
+      },
+    }
+  );
+
+  const commits = await responseCommits.json();
+  return {
+    languages: await responseLanguages.json(),
+    commits: commits.length,
+  };
 };
 const fetchGreenBay = async () => {
-  const response = await fetch(
+  const responseLanguages = await fetch(
     "https://api.github.com/repos/simz14/greenBay/languages",
     {
       header: {
-        Authorization:
-          "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",
+        Authorization: process.env.TOKEN,
       },
     }
   );
-  return response.json();
+  const responseCommits = await fetch(
+    "https://api.github.com/repos/simz14/greenBay/commits?page=1&per_page=200",
+    {
+      header: {
+        Authorization: process.env.TOKEN,
+      },
+    }
+  );
+  const commits = await responseCommits.json();
+  return {
+    languages: await responseLanguages.json(),
+    commits: commits.length,
+  };
 };
 
 const Home = async () => {
