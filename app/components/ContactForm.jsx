@@ -46,6 +46,7 @@ const ContactForm = () => {
       initial={{ opacity: 0, y: 200 }}
       transition={{ duration: 0.8 }}
       whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
     >
       <ContactWrapper>
         <h2>Get in touch</h2>

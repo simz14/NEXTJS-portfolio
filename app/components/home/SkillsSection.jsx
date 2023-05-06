@@ -154,6 +154,7 @@ const SkillsSection = () => {
               initial={{ opacity: 0, y: 200 }}
               transition={{ duration: 0.8 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               className="imageWrapper"
             >
               <Image className="cvphoto" src={cvphoto} alt="simona" />

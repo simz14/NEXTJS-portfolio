@@ -58,6 +58,7 @@ const DescriptionSection = () => {
           animate={{ y: 0 }}
           transition={{ duration: 0.8 }}
           whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
           className="contentWrapper"
         >
           <div className="description">
