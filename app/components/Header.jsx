@@ -5,10 +5,11 @@ import Container from "./Container";
 //import { BsGithub, BsLinkedin } from "react-icons/bs";
 import ButtonExtra from "./ButtonExtra";
 import styled from "styled-components";
+import Link from "next/link";
 
 const HeaderWrapper = styled.div`
-  position: absolute;
-  bottom: 90%;
+  position: fixed;
+  top: 0;
   z-index: 9999;
   width: 100%;
   .contentWrapper {
@@ -20,6 +21,10 @@ const HeaderWrapper = styled.div`
       position: relative;
       cursor: pointer;
       transition: ease 0.2s;
+      a {
+        text-decoration: none;
+        color: black;
+      }
     }
     .line:hover {
       color: #ff651c;
@@ -81,18 +86,26 @@ const Header = () => {
         <nav className="contentWrapper">
           <div className="home">
             <div className="line">
-              <span>SIMZ</span>
+              <Link href="#intro">
+                <span>SIMZ</span>
+              </Link>
             </div>
           </div>
           <div className="sections">
             <div className="hide line">
-              <span>SKILLS</span>
+              <Link href="#skills">
+                <span>SKILLS</span>
+              </Link>
             </div>
             <div className="hide line">
-              <span>PORTFOLIO</span>
+              <Link href="#portfolio">
+                <span>PORTFOLIO</span>
+              </Link>
             </div>
             <div className="hide line">
-              <span>CONTACT</span>
+              <Link href="#contact">
+                <span>CONTACT</span>
+              </Link>
             </div>
           </div>
           <div className="links ">

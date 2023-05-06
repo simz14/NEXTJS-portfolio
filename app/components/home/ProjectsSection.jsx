@@ -52,7 +52,7 @@ const ProjectsSectionWrapper = styled.div`
 
 const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
   return (
-    <ProjectsSectionWrapper>
+    <ProjectsSectionWrapper id="portfolio">
       <Container>
         <div className="contentWrapper">
           <h1 className="title">LASTEST PROJECTS</h1>

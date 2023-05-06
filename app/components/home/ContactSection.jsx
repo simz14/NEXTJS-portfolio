@@ -59,7 +59,7 @@ const SkillsSectionWrapper = styled.div`
 
 const ContactSection = () => {
   return (
-    <SkillsSectionWrapper>
+    <SkillsSectionWrapper id="contact">
       <Container>
         <div className="contentWrapper">
           <h1 className="title">CONTACT ME</h1>

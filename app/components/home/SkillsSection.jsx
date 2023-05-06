@@ -112,7 +112,7 @@ const SkillsSectionWrapper = styled.div`
 
 const SkillsSection = () => {
   return (
-    <SkillsSectionWrapper>
+    <SkillsSectionWrapper id="skills">
       <Container>
         <div className="contentWrapper">
           <h1 className="title">MY SKILLS</h1>

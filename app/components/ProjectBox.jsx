@@ -137,11 +137,11 @@ const ProjectBox = ({
           <h2>{title}</h2>
           <span>{description}</span>
           <div className="pulsingBox">
-            <div class="pulsing"></div>
+            <div className="pulsing"></div>
             <div>{getLines(Object.entries(data.languages))} lines of code</div>
           </div>
           <div className="pulsingBox">
-            <div class="pulsing"></div>
+            <div className="pulsing"></div>
             <div>{data.commits} commits</div>
           </div>
 

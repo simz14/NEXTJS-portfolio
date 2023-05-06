@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   color: #373737;
+  scroll-behavior: smooth !important ;
 }
 
 h1 {
