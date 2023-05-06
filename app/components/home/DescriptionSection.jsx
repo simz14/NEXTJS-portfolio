@@ -2,6 +2,7 @@
 import Container from "../Container";
 import styled from "styled-components";
 import ButtonExtra from "../ButtonExtra";
+import { motion } from "framer-motion";
 
 const DescriptionWrapper = styled.div`
   display: flex;
@@ -52,7 +53,13 @@ const DescriptionSection = () => {
   return (
     <DescriptionWrapper>
       <Container>
-        <div className="contentWrapper">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.8 }}
+          whileInView={{ opacity: 1 }}
+          className="contentWrapper"
+        >
           <div className="description">
             <h2>I am a FullStack developer with about 1 year of experience.</h2>
             <p>
@@ -78,7 +85,7 @@ const DescriptionSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </Container>
     </DescriptionWrapper>
   );

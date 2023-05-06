@@ -81,7 +81,7 @@ const IntroWrapper = styled.div`
 
 const IntroSection = () => {
   return (
-    <IntroWrapper id="intro">
+    <IntroWrapper>
       <Container>
         <div className="contentWrapper">
           <div className="introtext">

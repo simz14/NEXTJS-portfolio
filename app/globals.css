@@ -11,7 +11,9 @@ body {
   color: #373737;
   scroll-behavior: smooth !important ;
 }
-
+body {
+  overflow-y: hidden;
+}
 h1 {
   font-size: 60px;
 }

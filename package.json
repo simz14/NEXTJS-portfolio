@@ -12,17 +12,15 @@
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",
     "@mui/material": "^5.12.3",
-    "axios": "^1.4.0",
     "dotenv": "^16.0.3",
+    "framer-motion": "^10.12.8",
     "next": "13.3.4",
-    "octokit": "^2.0.14",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
     "react-simple-typewriter": "^5.0.1",
-    "styled-components": "^5.3.10",
-    "styled-jsx": "^5.1.2"
+    "styled-components": "^5.3.10"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.4.1",

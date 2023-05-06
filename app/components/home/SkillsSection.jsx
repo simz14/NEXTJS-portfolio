@@ -4,6 +4,7 @@ import Container from "../Container";
 import styled from "styled-components";
 import cvphoto from "../../../public/ofiSimona.jpg";
 import Image from "next/image";
+import { motion } from "framer-motion";
 /*import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import {
@@ -149,9 +150,14 @@ const SkillsSection = () => {
                 <h4>JEST</h4>
               </ColoredBox>
             </div>
-            <div className="imageWrapper">
+            <motion.div
+              initial={{ opacity: 0, y: 200 }}
+              transition={{ duration: 0.8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              className="imageWrapper"
+            >
               <Image className="cvphoto" src={cvphoto} alt="simona" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </Container>
