@@ -35,13 +35,14 @@ const Header = () => {
                 <span>CONTACT</span>
               </Link>
             </div>
-            <div className={`${styles.hide} ${styles.line}`}>
+          </div>
+          <div className={styles.buttons}>
+            <ButtonExtra>
               <Link href="/timeline">
                 <span>TIMELINE</span>
               </Link>
-            </div>
-          </div>
-          <div className={styles.line}>
+            </ButtonExtra>
+
             <ButtonExtra>
               <a target="blank" href="https://github.com/simz14"></a>
               <a
