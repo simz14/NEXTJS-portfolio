@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 999;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: #fff9ec;
+}
