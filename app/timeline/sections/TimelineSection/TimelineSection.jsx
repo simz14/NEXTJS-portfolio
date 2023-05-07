@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import styles from "./TimelineSection.module.scss";
-import { useRef } from "react";
 import Container from "@/app/components/Container/Container";
 
 const TimelineSection = () => {
@@ -10,12 +9,13 @@ const TimelineSection = () => {
       <Container>
         <div className={styles.wrapper}>
           <motion.div
-            initial={{ opacity: 0, x: -200 }}
+            initial={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             className={styles.boxWrapper}
           >
+            <div className={styles.line}></div>
             <div className={styles.box}>
               <p>2020-2022</p>
               <h1>Studying computer science in highschool.</h1>
@@ -26,12 +26,13 @@ const TimelineSection = () => {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 200 }}
+            initial={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             className={styles.boxWrapper}
           >
+            <div className={styles.line}></div>
             <div className={styles.box}>
               <p>Summer 2022</p>
               <h1>Frontend progtamming</h1>
@@ -42,12 +43,13 @@ const TimelineSection = () => {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: -200 }}
+            initial={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             className={styles.boxWrapper}
           >
+            <div className={styles.line}></div>
             <div className={styles.box}>
               <p>Oktober 2022</p>
               <h1>Started fullstack course at Green Fox Academy</h1>
