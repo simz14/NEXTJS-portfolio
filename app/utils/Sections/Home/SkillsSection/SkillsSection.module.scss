@@ -1,7 +1,7 @@
 .wrapper {
   width: 100%;
   height: 100%;
-  background-image: url("../../../../public/bg-effect.png");
+  background-image: url("../../../../../public/bg-effect.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -31,7 +31,7 @@
   grid-template-columns: 1fr 1fr;
   .imageWrapper {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     .cvphoto {
       position: relative;
       object-fit: cover;

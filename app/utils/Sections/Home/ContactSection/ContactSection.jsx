@@ -1,7 +1,7 @@
-import ColoredBox from "../../ColoredBox/ColoredBox";
-import Container from "../../Container/Container";
+import ColoredBox from "../../../../components/ColoredBox/ColoredBox";
+import Container from "../../../../components/Container/Container";
 import { FaEnvelope, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
-import ContactForm from "../../ContactForm/ContactForm";
+import ContactForm from "../../../../components/ContactForm/ContactForm";
 import styles from "./ContactSection.module.scss";
 
 const ContactSection = () => {

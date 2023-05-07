@@ -22,7 +22,7 @@ const ProjectBox = ({
 
   return (
     <div className={styles.boxWrapper}>
-      <div className={`box ${styles.box}`}>
+      <div className={styles.box}>
         <Image src={image} alt="project" />
         <div className={styles.text}>
           <div className={styles.badges}>

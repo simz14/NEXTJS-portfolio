@@ -1,8 +1,8 @@
 import styles from "./IntroSection.module.scss";
-import Container from "../../Container/Container";
-import simonagreen from "../../../../public/simonagreen.jpg";
+import Container from "../../../../components/Container/Container";
+import simonagreen from "../../../../../public/simonagreen.jpg";
 import Image from "next/image";
-import TypeWriterComponent from "../../TypeWritter";
+import TypeWriterComponent from "../../../../components/TypeWritter";
 
 const IntroSection = () => {
   return (

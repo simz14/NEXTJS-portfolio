@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../Container/Container";
+import Container from "../../components/Container/Container";
 import styles from "./Footer.module.scss";
 import { FaDiscord, FaFacebookF, FaInstagram } from "react-icons/fa";
 

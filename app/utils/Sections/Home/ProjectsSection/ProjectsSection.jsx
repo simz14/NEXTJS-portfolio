@@ -1,11 +1,11 @@
 "use client";
-import Container from "../../Container/Container";
+import Container from "../../../../components/Container/Container";
 import styles from "./ProjectSection.module.scss";
-import ProjectBox from "../../ProjectBox/ProjectBox";
-import happytails from "../../../../public/happytails.png";
-import doggyboard from "../../../../public/doggyboard.png";
-import greenBay from "../../../../public/greenBay.png";
-import ButtonExtra from "../../ButtonExtra/ButtonExtra";
+import ProjectBox from "../../../../components/ProjectBox/ProjectBox";
+import happytails from "../../../../../public/happytails.png";
+import doggyboard from "../../../../../public/doggyboard.png";
+import greenBay from "../../../../../public/greenBay.png";
+import ButtonExtra from "../../../../components/ButtonExtra/ButtonExtra";
 import { motion } from "framer-motion";
 //import { SiMui, SiReact, SiNodedotjs } from "react-icons/si";
 

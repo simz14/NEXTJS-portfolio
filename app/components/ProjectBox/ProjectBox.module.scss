@@ -1,9 +1,6 @@
 .boxWrapper {
   display: flex;
   flex-direction: column;
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-  }
 }
 
 .box {

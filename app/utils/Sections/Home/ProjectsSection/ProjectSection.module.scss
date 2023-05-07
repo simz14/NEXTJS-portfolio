@@ -19,10 +19,11 @@
   flex-direction: column;
   gap: 8rem;
   align-items: center;
-
-  div:nth-child(even) {
-    .box {
-      flex-direction: row-reverse;
+  & > div:nth-child(even) {
+    & > div {
+      & > div {
+        flex-direction: row-reverse;
+      }
     }
   }
 }
@@ -30,9 +31,11 @@
 @media (max-width: 1000px) {
   .contentWrapper {
     .content {
-      div:nth-child(even) {
-        .box {
-          flex-direction: column;
+      & > div:nth-child(even) {
+        & > div {
+          & > div {
+            flex-direction: column;
+          }
         }
       }
     }

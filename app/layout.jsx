@@ -1,5 +1,5 @@
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+import Footer from "./utils/Footer/Footer";
+import Header from "./utils/Header/Header";
 import "./globals.css";
 
 import { Jost } from "next/font/google";

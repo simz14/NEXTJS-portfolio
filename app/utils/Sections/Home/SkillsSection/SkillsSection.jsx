@@ -1,8 +1,8 @@
 "use client";
-import ColoredBox from "../../ColoredBox/ColoredBox";
-import Container from "../../Container/Container";
+import ColoredBox from "../../../../components/ColoredBox/ColoredBox";
+import Container from "../../../../components/Container/Container";
 import styles from "./SkillsSection.module.scss";
-import cvphoto from "../../../../public/ofiSimona.jpg";
+import cvphoto from "../../../../../public/ofiSimona.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 /*import { AiFillHtml5 } from "react-icons/ai";
@@ -24,7 +24,7 @@ import {
 } from "react-icons/si";
 import { GiDonut } from "react-icons/gi";
 import { TbBrandNextjs } from "react-icons/tb";*/
-import Tools from "../../ToolsComponent/Tools";
+import Tools from "../../../../components/ToolsComponent/Tools";
 
 const SkillsSection = () => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 
-import IntroSection from "./components/Home/IntroSection/IntroSection";
-import DescriptionSection from "./components/Home/DescriptionSection/DescriptionSection";
-import SkillsSection from "./components/Home/SkillsSection/SkillsSection";
-import ProjectsSection from "./components/Home/ProjectsSection.module.scss/ProjectsSection";
-import ContactSection from "./components/Home/ContactSection/ContactSection";
+import IntroSection from "./utils/Sections/Home/IntroSection/IntroSection";
+import DescriptionSection from "./utils/Sections/Home/DescriptionSection/DescriptionSection";
+import SkillsSection from "./utils/Sections/Home/SkillsSection/SkillsSection";
+import ProjectsSection from "./utils/Sections/Home/ProjectsSection/ProjectsSection";
+import ContactSection from "./utils/Sections/Home/ContactSection/ContactSection";
 import dotenv from "dotenv";
 dotenv.config();
 

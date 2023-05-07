@@ -1,7 +1,7 @@
 "use client";
 import styles from "./DescriptionSection.module.scss";
-import Container from "../../Container/Container";
-import ButtonExtra from "../../ButtonExtra/ButtonExtra";
+import Container from "../../../../components/Container/Container";
+import ButtonExtra from "../../../../components/ButtonExtra/ButtonExtra";
 import { motion } from "framer-motion";
 
 const DescriptionSection = () => {

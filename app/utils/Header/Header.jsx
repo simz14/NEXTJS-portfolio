@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import Container from "../Container/Container";
+import Container from "../../components/Container/Container";
 //import { BsGithub, BsLinkedin } from "react-icons/bs";
-import ButtonExtra from "../ButtonExtra/ButtonExtra";
+import ButtonExtra from "../../components/ButtonExtra/ButtonExtra";
 import styles from "./Header.module.scss";
 import Link from "next/link";
 
