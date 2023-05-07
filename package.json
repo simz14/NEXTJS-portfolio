@@ -20,7 +20,7 @@
     "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
     "react-simple-typewriter": "^5.0.1",
-    "styled-components": "^5.3.10"
+    "sass": "^1.62.1"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.4.1",

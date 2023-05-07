@@ -1,0 +1,13 @@
+.tools {
+  background-color: #373737;
+  display: flex;
+  padding: 10px;
+}
+.children {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  color: white;
+  gap: 1rem;
+  justify-content: space-around;
+}

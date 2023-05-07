@@ -1,0 +1,40 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+.contentWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  position: relative;
+  z-index: 999;
+  gap: 4rem;
+}
+.title {
+  color: #ff651c;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+
+  div:nth-child(even) {
+    .box {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .contentWrapper {
+    .content {
+      div:nth-child(even) {
+        .box {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

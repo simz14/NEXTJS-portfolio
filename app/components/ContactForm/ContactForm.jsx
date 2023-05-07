@@ -1,26 +1,10 @@
 "use client";
-
 import React from "react";
 import { useForm } from "react-hook-form";
-import styled from "styled-components";
+import styles from "./ContactForm.module.scss";
 import { TextField } from "@mui/material";
-import ButtonExtra from "./ButtonExtra";
+import ButtonExtra from "../ButtonExtra/ButtonExtra";
 import { motion } from "framer-motion";
-
-const ContactWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 35px;
-  gap: 0.5rem;
-  .twoinline {
-    display: flex;
-    gap: 0.5rem;
-    .MuiFormControl-root {
-      width: 100%;
-    }
-  }
-`;
 
 const ContactForm = () => {
   const {
@@ -48,7 +32,7 @@ const ContactForm = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >
-      <ContactWrapper>
+      <div className={styles.form}>
         <h2>Get in touch</h2>
         <div className="twoinline">
           <TextField
@@ -94,7 +78,7 @@ const ContactForm = () => {
         <ButtonExtra onClick={handleSubmit(handleClickSend)}>
           <h2>Send</h2>
         </ButtonExtra>
-      </ContactWrapper>
+      </div>
     </motion.div>
   );
 };

@@ -1,63 +1,21 @@
 "use client";
-import Container from "../Container";
-import styled from "styled-components";
-import ProjectBox from "../ProjectBox";
-import happytails from "../../../public/happytails.png";
-import doggyboard from "../../../public/doggyboard.png";
-import greenBay from "../../../public/greenBay.png";
-import ButtonExtra from "../ButtonExtra";
+import Container from "../../Container/Container";
+import styles from "./ProjectSection.module.scss";
+import ProjectBox from "../../ProjectBox/ProjectBox";
+import happytails from "../../../../public/happytails.png";
+import doggyboard from "../../../../public/doggyboard.png";
+import greenBay from "../../../../public/greenBay.png";
+import ButtonExtra from "../../ButtonExtra/ButtonExtra";
 import { motion } from "framer-motion";
 //import { SiMui, SiReact, SiNodedotjs } from "react-icons/si";
 
-const ProjectsSectionWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-
-  .contentWrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0;
-    position: relative;
-    z-index: 999;
-    gap: 4rem;
-    .title {
-      color: #ff651c;
-    }
-    .content {
-      display: flex;
-      flex-direction: column;
-      gap: 8rem;
-      align-items: center;
-
-      div:nth-child(even) {
-        .box {
-          flex-direction: row-reverse;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 1000px) {
-    .contentWrapper {
-      .content {
-        div:nth-child(even) {
-          .box {
-            flex-direction: column;
-          }
-        }
-      }
-    }
-  }
-`;
-
 const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
   return (
-    <ProjectsSectionWrapper id="portfolio">
+    <div className={styles.wrapper} id="portfolio">
       <Container>
-        <div className="contentWrapper">
-          <h1 className="title">LASTEST PROJECTS</h1>
-          <div className="content">
+        <div className={styles.contentWrapper}>
+          <h1 className={styles.title}>LASTEST PROJECTS</h1>
+          <div className={styles.content}>
             <motion.div
               initial={{ opacity: 0, x: -200 }}
               transition={{ duration: 0.8 }}
@@ -132,7 +90,7 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
           </div>
         </div>
       </Container>
-    </ProjectsSectionWrapper>
+    </div>
   );
 };
 

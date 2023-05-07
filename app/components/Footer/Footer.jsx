@@ -1,40 +1,14 @@
-"use client";
-
 import React from "react";
-import Container from "./Container";
-import styled from "styled-components";
+import Container from "../Container/Container";
+import styles from "./Footer.module.scss";
 import { FaDiscord, FaFacebookF, FaInstagram } from "react-icons/fa";
-
-const HeaderWrapper = styled.div`
-  z-index: 9999;
-  width: 100%;
-  background-color: #373737;
-  border-top: 1px solid #545353;
-  .contentWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    .links {
-      display: flex;
-      gap: 0.5rem;
-    }
-    a {
-      text-decoration: none;
-      color: white;
-    }
-    svg,
-    p {
-      color: white;
-    }
-  }
-`;
 
 const Footer = () => {
   return (
-    <HeaderWrapper>
+    <div className={styles.footer}>
       <Container>
-        <div className="contentWrapper">
-          <div className="links">
+        <div className={styles.contentWrapper}>
+          <div className={styles.links}>
             <a href="https://www.facebook.com/simona.zozulakova">
               <FaFacebookF />
             </a>
@@ -50,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
       </Container>
-    </HeaderWrapper>
+    </div>
   );
 };
 

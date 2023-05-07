@@ -1,57 +1,12 @@
 "use client";
-import Container from "../Container";
-import styled from "styled-components";
-import ButtonExtra from "../ButtonExtra";
+import styles from "./DescriptionSection.module.scss";
+import Container from "../../Container/Container";
+import ButtonExtra from "../../ButtonExtra/ButtonExtra";
 import { motion } from "framer-motion";
-
-const DescriptionWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-
-  .contentWrapper {
-    display: flex;
-    padding: 50px 0;
-    position: relative;
-    z-index: 999;
-    max-width: 640px;
-    align-self: center;
-
-    .description {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 1rem;
-    }
-    .calculations {
-      display: flex;
-      justify-content: space-evenly;
-      .calculation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-    .imageWrapper {
-      display: flex;
-      justify-content: center;
-    }
-  }
-  @media (max-width: 1000px) {
-    .contentWrapper {
-      gap: 3rem;
-      .introtext {
-        align-items: center;
-        text-align: center;
-      }
-    }
-  }
-`;
 
 const DescriptionSection = () => {
   return (
-    <DescriptionWrapper>
+    <div className={styles.wrapper}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -59,9 +14,9 @@ const DescriptionSection = () => {
           transition={{ duration: 0.8 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="contentWrapper"
+          className={styles.contentWrapper}
         >
-          <div className="description">
+          <div className={styles.description}>
             <h2>I am a FullStack developer with about 1 year of experience.</h2>
             <p>
               I'm a 20-year-old FullStack programmer. I started programming more
@@ -69,15 +24,15 @@ const DescriptionSection = () => {
               and continue to do so. I currently live in Trnava, but I come from
               Svidník, a city in eastern Slovakia.
             </p>
-            <div className="calculations">
-              <div className="calculation">
+            <div className={styles.calculations}>
+              <div className={styles.calculation}>
                 <h3>10</h3>
                 <p>Projects completed</p>
                 <ButtonExtra>
                   <h3>Contact</h3>
                 </ButtonExtra>
               </div>
-              <div className="calculation">
+              <div className={styles.calculation}>
                 <h3>1000+</h3>
                 <p>lines of code writte</p>
                 <ButtonExtra>
@@ -88,7 +43,7 @@ const DescriptionSection = () => {
           </div>
         </motion.div>
       </Container>
-    </DescriptionWrapper>
+    </div>
   );
 };
 

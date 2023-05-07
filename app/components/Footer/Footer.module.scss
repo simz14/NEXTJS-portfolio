@@ -1,0 +1,24 @@
+.footer {
+  z-index: 9999;
+  width: 100%;
+  background-color: #373737;
+  border-top: 1px solid #545353;
+}
+.contentWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  gap: 0.5rem;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  svg,
+  p {
+    color: white;
+  }
+}
