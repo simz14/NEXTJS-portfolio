@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../../components/Container/Container";
 //import { BsGithub, BsLinkedin } from "react-icons/bs";
 import ButtonExtra from "../../components/ButtonExtra/ButtonExtra";
@@ -8,8 +8,30 @@ import styles from "./Header.module.scss";
 import Link from "next/link";
 
 const Header = () => {
+  const [headerBcg, setHeaderBcg] = useState(false);
+
+  const onScroll = () => {
+    const { pageYOffset } = window;
+    setHeaderBcg(pageYOffset);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
+  console.log(headerBcg);
   return (
-    <div className={styles.header}>
+    <div
+      style={{
+        backgroundColor: headerBcg > 30 ? "white" : "transparent",
+        boxShadow:
+          headerBcg > 30 ? "0 0.125rem 0.25rem rgba(55, 55, 55, .075)" : "none",
+      }}
+      className={styles.header}
+    >
       <Container>
         <nav className={styles.contentWrapper}>
           <div className={styles.home}>
@@ -27,7 +49,7 @@ const Header = () => {
             </div>
             <div className={`${styles.hide} ${styles.line}`}>
               <Link href="#portfolio">
-                <span>PORTFOLIO</span>
+                <span>PROJECTS</span>
               </Link>
             </div>
             <div className={`${styles.hide} ${styles.line}`}>
@@ -39,7 +61,7 @@ const Header = () => {
           <div className={styles.buttons}>
             <ButtonExtra>
               <Link href="/timeline">
-                <span>TIMELINE</span>
+                <span>MY JOURNEY</span>
               </Link>
             </ButtonExtra>
 

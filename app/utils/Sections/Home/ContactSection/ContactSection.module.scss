@@ -9,6 +9,10 @@
 .title {
   color: #ff651c;
 }
+.info {
+  color: #ff651c;
+  text-decoration: underline;
+}
 
 .content {
   display: grid;
@@ -47,6 +51,7 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+  align-items: center;
   h4 {
     color: white;
   }

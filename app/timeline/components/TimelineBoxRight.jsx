@@ -5,6 +5,9 @@ const TimelineBoxRight = ({
   classnameBox,
   classnameline,
   classnameDot,
+  date,
+  title,
+  description,
 }) => {
   return (
     <div className={classnameWrapper}>
@@ -31,11 +34,9 @@ const TimelineBoxRight = ({
         viewport={{ once: true }}
         className={classnameBox}
       >
-        <p>2020-2022</p>
-        <h1>Studying computer science in highschool.</h1>
-        <h2>
-          Started my programming journey with bases of programming and python.
-        </h2>
+        <p>{date}</p>
+        <h1>{title}</h1>
+        <h2>{description}</h2>
       </motion.div>
     </div>
   );

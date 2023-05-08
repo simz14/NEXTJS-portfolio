@@ -28,7 +28,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   position: relative;
-  overflow: hidden;
   height: 27rem;
   align-items: center;
   @media (max-width: 1000px) {
@@ -61,6 +60,7 @@
   }
   @media (max-width: 1000px) {
     height: 15rem;
+    width: 100%;
   }
 }
 .line {

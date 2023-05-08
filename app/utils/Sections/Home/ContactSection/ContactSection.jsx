@@ -10,6 +10,9 @@ const ContactSection = () => {
       <Container>
         <div className={styles.contentWrapper}>
           <h1 className={styles.title}>CONTACT ME</h1>
+          <h2 className={styles.info}>
+            ! The service is currently unavailable !
+          </h2>
           <div className={styles.content}>
             <ContactForm />
             <div className={styles.contacts}>

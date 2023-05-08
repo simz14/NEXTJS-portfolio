@@ -83,7 +83,7 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
               />
             </motion.div>
             <ButtonExtra>
-              <a href="https://github.com/simz14">
+              <a target="blank" href="https://github.com/simz14">
                 <h2>See more</h2>
               </a>
             </ButtonExtra>

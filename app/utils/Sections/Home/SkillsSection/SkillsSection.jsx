@@ -102,6 +102,9 @@ const SkillsSection = () => {
         <div className={styles.child}>
           <h5>SWEET ALERT</h5>
         </div>
+        <div className={styles.child}>
+          <h5>JIRA</h5>
+        </div>
       </Tools>
     </div>
   );
