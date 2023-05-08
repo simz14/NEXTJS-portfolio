@@ -74,4 +74,7 @@
 .buttons {
   display: flex;
   gap: 0.5rem;
+  a {
+    text-decoration: none;
+  }
 }

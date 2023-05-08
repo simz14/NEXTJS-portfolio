@@ -59,11 +59,11 @@ const Header = () => {
             </div>
           </div>
           <div className={styles.buttons}>
-            <ButtonExtra>
-              <Link href="/timeline">
+            <Link href="/timeline">
+              <ButtonExtra>
                 <span>MY JOURNEY</span>
-              </Link>
-            </ButtonExtra>
+              </ButtonExtra>
+            </Link>
 
             <ButtonExtra>
               <a target="blank" href="https://github.com/simz14">
