@@ -29,7 +29,7 @@ const ProjectBox = ({
             {tech.map((item) => {
               return (
                 <div key={item.name} className={styles.badge}>
-                  {item.name}
+                  {item.icon} {item.name}
                 </div>
               );
             })}

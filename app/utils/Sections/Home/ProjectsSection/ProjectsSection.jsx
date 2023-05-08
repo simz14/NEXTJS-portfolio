@@ -7,7 +7,7 @@ import doggyboard from "../../../../../public/doggyboard.png";
 import greenBay from "../../../../../public/greenBay.png";
 import ButtonExtra from "../../../../components/ButtonExtra/ButtonExtra";
 import { motion } from "framer-motion";
-//import { SiMui, SiReact, SiNodedotjs } from "react-icons/si";
+import { SiMui, SiReact, SiNodedotjs } from "react-icons/si";
 
 const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
   return (
@@ -24,9 +24,9 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
             >
               <ProjectBox
                 tech={[
-                  { name: "ReactJS" },
-                  { name: "NodeJS" },
-                  { name: "Mui" },
+                  { name: "ReactJS", icon: <SiReact /> },
+                  { name: "NodeJS", icon: <SiNodedotjs /> },
+                  { name: "Mui", icon: <SiMui /> },
                 ]}
                 data={doggyboardData}
                 image={doggyboard}
@@ -47,7 +47,10 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
               viewport={{ once: true }}
             >
               <ProjectBox
-                tech={[{ name: "ReactJS" }, { name: "Mui" }]}
+                tech={[
+                  { name: "ReactJS", icon: <SiReact /> },
+                  { name: "Mui", icon: <SiMui /> },
+                ]}
                 data={happyTailsData}
                 image={happytails}
                 imageFirst={false}
@@ -67,9 +70,9 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
             >
               <ProjectBox
                 tech={[
-                  { name: "ReactJS" },
-                  { name: "NodeJS" },
-                  { name: "Mui" },
+                  { name: "ReactJS", icon: <SiReact /> },
+                  { name: "NodeJS", icon: <SiNodedotjs /> },
+                  { name: "Mui", icon: <SiMui /> },
                 ]}
                 data={greenBayData}
                 image={greenBay}

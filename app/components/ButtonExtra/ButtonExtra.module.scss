@@ -9,14 +9,17 @@
   color: #fff;
   cursor: pointer;
   transition: 0.3s ease;
+  align-items: center;
   &:hover {
     background: #373737;
     border-color: #373737;
     box-shadow: 6px 6px 0 -2px #ff651c;
   }
   a {
+    display: flex;
     text-decoration: none;
     color: white;
+    align-items: center;
   }
   svg {
     cursor: pointer;

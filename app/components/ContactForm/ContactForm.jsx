@@ -34,7 +34,7 @@ const ContactForm = () => {
     >
       <div className={styles.form}>
         <h2>Get in touch</h2>
-        <div className="twoinline">
+        <div className={styles.twoinline}>
           <TextField
             {...register("name", {
               required: "Name is required",

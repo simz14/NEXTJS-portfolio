@@ -15,9 +15,6 @@ const Footer = () => {
             <a target="blank" href="https://www.instagram.com/simaz14/">
               <FaInstagram />
             </a>
-            <a target="blank" href=" https://bit.ly/3JhfA7y">
-              <FaDiscord />
-            </a>
           </div>
           <div>
             <p>Created by Simona</p>

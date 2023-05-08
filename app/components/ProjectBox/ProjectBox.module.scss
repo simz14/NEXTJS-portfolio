@@ -82,6 +82,9 @@
   letter-spacing: 3px;
   padding: 8px 20px;
   text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
 }
 
 @media (max-width: 1000px) {

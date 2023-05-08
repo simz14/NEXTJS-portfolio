@@ -33,8 +33,8 @@ const DescriptionSection = () => {
                 </ButtonExtra>
               </div>
               <div className={styles.calculation}>
-                <h3>1000+</h3>
-                <p>lines of code writte</p>
+                <h3>1 000 000+</h3>
+                <p>lines of code written</p>
                 <ButtonExtra>
                   <h3>Portfolio</h3>
                 </ButtonExtra>

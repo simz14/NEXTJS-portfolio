@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Container from "../../components/Container/Container";
-//import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import ButtonExtra from "../../components/ButtonExtra/ButtonExtra";
 import styles from "./Header.module.scss";
 import Link from "next/link";
@@ -66,11 +66,15 @@ const Header = () => {
             </ButtonExtra>
 
             <ButtonExtra>
-              <a target="blank" href="https://github.com/simz14"></a>
+              <a target="blank" href="https://github.com/simz14">
+                <BsGithub />
+              </a>
               <a
                 target="blank"
                 href="https://www.linkedin.com/in/simona-zozu%C4%BEakov%C3%A1-003639249/"
-              ></a>
+              >
+                <BsLinkedin />
+              </a>
             </ButtonExtra>
           </div>
         </nav>
