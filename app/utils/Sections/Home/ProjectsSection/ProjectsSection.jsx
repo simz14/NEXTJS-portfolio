@@ -85,11 +85,11 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
                 demo={"https://green-bay-v1.vercel.app/"}
               />
             </motion.div>
-            <ButtonExtra>
-              <a target="blank" href="https://github.com/simz14">
+            <a target="blank" href="https://github.com/simz14">
+              <ButtonExtra>
                 <h2>See more</h2>
-              </a>
-            </ButtonExtra>
+              </ButtonExtra>
+            </a>
           </div>
         </div>
       </Container>

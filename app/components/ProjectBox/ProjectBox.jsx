@@ -46,16 +46,17 @@ const ProjectBox = ({
           </div>
 
           <div className={styles.buttonsWrapper}>
-            <ButtonExtra>
-              <a target="_blank" href={github}>
+            <a target="_blank" href={github}>
+              <ButtonExtra>
                 <h3>GitHub</h3>
-              </a>
-            </ButtonExtra>
-            <ButtonExtra>
-              <a target="_blank" href={demo}>
+              </ButtonExtra>
+            </a>
+
+            <a target="_blank" href={demo}>
+              <ButtonExtra>
                 <h3>Demo</h3>
-              </a>
-            </ButtonExtra>
+              </ButtonExtra>
+            </a>
           </div>
         </div>
       </div>
