@@ -22,7 +22,6 @@ const Header = () => {
     };
   }, []);
 
-  console.log(headerBcg);
   return (
     <div
       style={{
