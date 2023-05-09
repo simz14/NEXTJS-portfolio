@@ -1,16 +1,13 @@
-"use client";
-import { motion } from "framer-motion";
 import styles from "./TimelineSection.module.scss";
-import Container from "@/app/components/Container/Container";
-import TimelineBoxLeft from "../../components/TimelineBoxLeft";
-import TimelineBoxRight from "../../components/TimelineBoxRight";
+import Container from "../../../components/Container/Container";
+import TimelineBox from "../../components/TimelineBox";
 
 const TimelineSection = () => {
   return (
     <div className={styles.bcg}>
       <Container>
         <div className={styles.wrapper}>
-          <TimelineBoxRight
+          <TimelineBox
             classnameWrapper={styles.boxWrapper}
             classnameBox={styles.box}
             classnameline={styles.line}
@@ -21,7 +18,7 @@ const TimelineSection = () => {
               "I started my programming journey with bases of programming and python."
             }
           />
-          <TimelineBoxLeft
+          <TimelineBox
             classnameWrapper={styles.boxWrapper}
             classnameBox={styles.box}
             classnameline={styles.line}
@@ -31,8 +28,9 @@ const TimelineSection = () => {
             description={
               "I became interested in the frontend part of programming. I decided to learn frontend technologies."
             }
+            left={true}
           />
-          <TimelineBoxRight
+          <TimelineBox
             classnameWrapper={styles.boxWrapper}
             classnameBox={styles.box}
             classnameline={styles.line}
@@ -40,8 +38,18 @@ const TimelineSection = () => {
             date={"Oktober 2022"}
             title={"Improving my stack"}
             description={"Learning Typescript and NodeJS."}
+            projects={[
+              {
+                title: "Music player",
+                link: "https://github.com/simz14/FoxPlayer",
+              },
+              {
+                title: "Quiz app",
+                link: "https://github.com/simz14/Quiz-application",
+              },
+            ]}
           />
-          <TimelineBoxLeft
+          <TimelineBox
             classnameWrapper={styles.boxWrapper}
             classnameBox={styles.box}
             classnameline={styles.line}
@@ -51,9 +59,24 @@ const TimelineSection = () => {
             description={
               "After better understanding of Javascript and DOM I decided to learn ReactJS for building complex web applications."
             }
+            projects={[
+              {
+                title: "Tea app",
+                link: "https://github.com/simz14/react-tea-101",
+              },
+              {
+                title: "ToDo app",
+                link: "https://github.com/simz14/react-TodoApp",
+              },
+              {
+                title: "Beer app",
+                link: "https://github.com/simz14/react-brepi",
+              },
+            ]}
+            left={true}
           />
 
-          <TimelineBoxRight
+          <TimelineBox
             classnameWrapper={styles.boxWrapper}
             classnameBox={styles.box}
             classnameline={styles.line}
@@ -61,10 +84,10 @@ const TimelineSection = () => {
             date={"December-January 2023"}
             title={"Group project"}
             description={
-              "In the programming bootcamp, we created a ticketportal application in a group of four people (SCRUM)."
+              "In the programming bootcamp, we created a ticketportal application in a group of six people (SCRUM)."
             }
           />
-          <TimelineBoxLeft
+          <TimelineBox
             classnameWrapper={styles.boxWrapper}
             classnameBox={styles.box}
             classnameline={styles.line}
@@ -74,8 +97,9 @@ const TimelineSection = () => {
             description={
               "After learning important concepts of React, I started to work on bigger and more complex applications."
             }
+            left={true}
           />
-          <TimelineBoxRight
+          <TimelineBox
             classnameWrapper={styles.boxWrapper}
             classnameBox={styles.box}
             classnameline={styles.line}
@@ -86,7 +110,7 @@ const TimelineSection = () => {
               "After few months of making projects in React, I decided to learn NextJS and concepts of SSR and server components in React."
             }
           />
-          <TimelineBoxLeft
+          <TimelineBox
             classnameWrapper={styles.boxWrapper}
             classnameBox={styles.box}
             classnameline={styles.line}
@@ -94,6 +118,7 @@ const TimelineSection = () => {
             date={"Present"}
             title={"Practicing and looking for a job opportunity"}
             description={"Buildinig projects in NextJs."}
+            left={true}
           />
         </div>
       </Container>

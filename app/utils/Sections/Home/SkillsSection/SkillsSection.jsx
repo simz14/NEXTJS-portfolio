@@ -5,7 +5,7 @@ import styles from "./SkillsSection.module.scss";
 import cvphoto from "../../../../../public/ofiSimona.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { AiFillHtml5 } from "react-icons/ai";
+/*import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
 import {
   SiExpress,
@@ -24,7 +24,7 @@ import {
   SiJirasoftware,
 } from "react-icons/si";
 import { GiDonut } from "react-icons/gi";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs } from "react-icons/tb";*/
 import Tools from "../../../../components/ToolsComponent/Tools";
 
 const SkillsSection = () => {
@@ -36,43 +36,43 @@ const SkillsSection = () => {
           <div className={styles.content}>
             <div className={styles.boxes}>
               <ColoredBox color="#9bd3d0">
-                <AiFillHtml5 />
+                {/*<AiFillHtml5 />*/}
                 <h4>HTML</h4>
               </ColoredBox>
               <ColoredBox color="#ffc107">
-                <IoLogoCss3 />
+                {/* <IoLogoCss3 />*/}
                 <h4>CSS</h4>
               </ColoredBox>
               <ColoredBox color="#feccb5">
-                <SiJavascript />
+                {/*  <SiJavascript />*/}
                 <h4>JAVASCRIPT</h4>
               </ColoredBox>
               <ColoredBox color="#92b5ff">
-                <SiTypescript />
+                {/* <SiTypescript />*/}
                 <h4>TYPESCRIPT</h4>
               </ColoredBox>
               <ColoredBox color="#c4d39b">
-                <SiReact />
+                {/* <SiReact />*/}
                 <h4>REACT</h4>
               </ColoredBox>
               <ColoredBox color="#d2ceff">
-                <TbBrandNextjs />
+                {/*  <TbBrandNextjs />*/}
                 <h4>NEXTJS</h4>
               </ColoredBox>
               <ColoredBox color="#9bd3d0">
-                <IoLogoNodejs />
+                {/* <IoLogoNodejs />*/}
                 <h4>NODEJS</h4>
               </ColoredBox>
               <ColoredBox color="#ffc107">
-                <SiExpress />
+                {/*  <SiExpress />*/}
                 <h4>EXPRESS</h4>
               </ColoredBox>
               <ColoredBox color="#feccb5">
-                <SiMysql />
+                {/* <SiMysql />*/}
                 <h4>SQL</h4>
               </ColoredBox>
               <ColoredBox color="#92b5ff">
-                <SiJest />
+                {/*  <SiJest />*/}
                 <h4>JEST</h4>
               </ColoredBox>
             </div>
@@ -90,39 +90,39 @@ const SkillsSection = () => {
       </Container>
       <Tools>
         <div className={styles.child}>
-          <SiStyledcomponents />
+          {/* <SiStyledcomponents />*/}
           <h5>STYLED COMPONENTS</h5>
         </div>
         <div className={styles.child}>
-          <SiMui />
+          {/* <SiMui />*/}
           <h5>MUI</h5>
         </div>
         <div className={styles.child}>
-          <SiReacthookform />
+          {/* <SiReacthookform />*/}
           <h5>REACT HOOK FORM</h5>
         </div>
         <div className={styles.child}>
-          <SiSequelize />
+          {/* <SiSequelize />*/}
           <h5>SEQUELIZE</h5>
         </div>
         <div className={styles.child}>
-          <SiSwiper />
+          {/* <SiSwiper />
           <h5>SWIPER</h5>
         </div>
         <div className={styles.child}>
-          <SiScrollreveal />
+           {   /*<SiScrollreveal />*/}
           <h5>SCROLLREVEALJS</h5>
         </div>
         <div className={styles.child}>
-          <SiGit />
+          {/*  <SiGit />*/}
           <h5>GIT</h5>
         </div>
         <div className={styles.child}>
-          <GiDonut />
+          {/* <GiDonut />*/}
           <h5>SWEET ALERT</h5>
         </div>
         <div className={styles.child}>
-          <SiJirasoftware />
+          {/*<SiJirasoftware />*/}
           <h5>JIRA</h5>
         </div>
       </Tools>

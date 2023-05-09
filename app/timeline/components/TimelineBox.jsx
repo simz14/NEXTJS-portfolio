@@ -1,6 +1,7 @@
+"use client";
 import { motion } from "framer-motion";
 
-const TimelineBoxRight = ({
+const TimelineBox = ({
   classnameWrapper,
   classnameBox,
   classnameline,
@@ -8,6 +9,8 @@ const TimelineBoxRight = ({
   date,
   title,
   description,
+  projects,
+  left,
 }) => {
   return (
     <div className={classnameWrapper}>
@@ -28,7 +31,7 @@ const TimelineBoxRight = ({
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: left ? -100 : 100 }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -37,8 +40,21 @@ const TimelineBoxRight = ({
         <p>{date}</p>
         <h1>{title}</h1>
         <h2>{description}</h2>
+        {projects && (
+          <div>
+            {projects?.map((item) => {
+              return (
+                <p key={item.link}>
+                  <a target="blank" href={item.link}>
+                    {item.title}
+                  </a>
+                </p>
+              );
+            })}
+          </div>
+        )}
       </motion.div>
     </div>
   );
 };
-export default TimelineBoxRight;
+export default TimelineBox;

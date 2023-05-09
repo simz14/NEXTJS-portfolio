@@ -6,6 +6,7 @@ import SkillsSection from "./utils/Sections/Home/SkillsSection/SkillsSection";
 import ProjectsSection from "./utils/Sections/Home/ProjectsSection/ProjectsSection";
 import ContactSection from "./utils/Sections/Home/ContactSection/ContactSection";
 import dotenv from "dotenv";
+
 dotenv.config();
 
 const fetchDoggyBoard = async () => {

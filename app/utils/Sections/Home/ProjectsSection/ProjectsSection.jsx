@@ -14,7 +14,7 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
     <div className={styles.wrapper} id="portfolio">
       <Container>
         <div className={styles.contentWrapper}>
-          <h1 className={styles.title}>LASTEST PROJECTS</h1>
+          <h1 className={styles.title}>LATEST PROJECTS</h1>
           <div className={styles.content}>
             <motion.div
               initial={{ opacity: 0, x: -200 }}

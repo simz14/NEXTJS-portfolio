@@ -3,6 +3,7 @@ import styles from "./DescriptionSection.module.scss";
 import Container from "../../../../components/Container/Container";
 import ButtonExtra from "../../../../components/ButtonExtra/ButtonExtra";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const DescriptionSection = () => {
   return (
@@ -26,18 +27,22 @@ const DescriptionSection = () => {
             </p>
             <div className={styles.calculations}>
               <div className={styles.calculation}>
-                <h3>10</h3>
+                <h3>14</h3>
                 <p>Projects completed</p>
-                <ButtonExtra>
-                  <h3>Contact</h3>
-                </ButtonExtra>
+                <Link href="#contact">
+                  <ButtonExtra>
+                    <h3>Contact</h3>
+                  </ButtonExtra>
+                </Link>
               </div>
               <div className={styles.calculation}>
                 <h3>1 000 000+</h3>
                 <p>lines of code written</p>
-                <ButtonExtra>
-                  <h3>Portfolio</h3>
-                </ButtonExtra>
+                <Link href="#portfolio">
+                  <ButtonExtra>
+                    <h3>Portfolio</h3>
+                  </ButtonExtra>
+                </Link>
               </div>
             </div>
           </div>
