@@ -24,8 +24,8 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
             >
               <ProjectBox
                 tech={[
-                  { name: "ReactJS", icon: <SiReact /> },
-                  { name: "NodeJS", icon: <SiNodedotjs /> },
+                  { name: "React", icon: <SiReact /> },
+                  { name: "Node.js", icon: <SiNodedotjs /> },
                   { name: "Mui", icon: <SiMui /> },
                 ]}
                 data={doggyboardData}
@@ -48,7 +48,7 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
             >
               <ProjectBox
                 tech={[
-                  { name: "ReactJS", icon: <SiReact /> },
+                  { name: "React", icon: <SiReact /> },
                   { name: "Mui", icon: <SiMui /> },
                 ]}
                 data={happyTailsData}
@@ -70,8 +70,8 @@ const ProjectsSection = ({ doggyboardData, happyTailsData, greenBayData }) => {
             >
               <ProjectBox
                 tech={[
-                  { name: "ReactJS", icon: <SiReact /> },
-                  { name: "NodeJS", icon: <SiNodedotjs /> },
+                  { name: "React", icon: <SiReact /> },
+                  { name: "Node.js", icon: <SiNodedotjs /> },
                   { name: "Mui", icon: <SiMui /> },
                 ]}
                 data={greenBayData}
