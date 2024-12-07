@@ -6,6 +6,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const DescriptionSection = () => {
+  const birthdate = new Date(2002, 10, 11);
+  const currentDate = new Date();
+  let age = currentDate.getFullYear() - birthdate.getFullYear();
+
   return (
     <div className={styles.wrapper}>
       <Container>
@@ -18,12 +22,9 @@ const DescriptionSection = () => {
           className={styles.contentWrapper}
         >
           <div className={styles.description}>
-            <h2>I am a FullStack developer with about 1 year of experience.</h2>
+            <h2>I’m a {age}-year-old developer with a strong focus on frontend development, though I also have experience in backend technologies.</h2>
             <p>
-              I'm a 20-year-old FullStack programmer. I started programming more
-              than a year ago. Since then, I have been expanding my knowledge
-              and continue to do so. I currently live in Trnava, but I come from
-              Svidník, a city in eastern Slovakia.
+ I began my programming journey in 2022 and have been continuously expanding my skill set ever since. Originally from Svidník, a city in eastern Slovakia, I currently reside in Trnava. I’m passionate about building seamless and dynamic web applications and am always eager to learn and grow in both frontend and backend technologies.
             </p>
             <div className={styles.calculations}>
               <div className={styles.calculation}>

@@ -6,26 +6,11 @@ import cvphoto from "../../../../../public/ofiSimona.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { AiFillHtml5 } from "react-icons/ai";
-import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
-import {
-  SiExpress,
-  SiGit,
-  SiJavascript,
-  SiJest,
-  SiMui,
-  SiMysql,
-  SiReact,
-  SiReacthookform,
-  SiScrollreveal,
-  SiSequelize,
-  SiStyledcomponents,
-  SiSwiper,
-  SiTypescript,
-  SiJirasoftware,
-} from "react-icons/si";
+import { IoLogoCss3 } from "react-icons/io";
+import { SiExpress, SiGit, SiJest,SiSwiper,SiScrollreveal,SiJirasoftware, SiMui, SiMysql, SiReact, SiReacthookform, SiSequelize, SiStyledcomponents, SiTailwindcss, SiTypescript, SiStorybook, SiNextdotjs, SiNextintl, SiNodedotjs } from "react-icons/si";
 import { GiDonut } from "react-icons/gi";
-import { TbBrandNextjs } from "react-icons/tb";
 import Tools from "../../../../components/ToolsComponent/Tools";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const SkillsSection = () => {
   return (
@@ -35,45 +20,66 @@ const SkillsSection = () => {
           <h1 className={styles.title}>MY SKILLS</h1>
           <div className={styles.content}>
             <div className={styles.boxes}>
+              {/* Frontend Skills */}
               <ColoredBox color="#9bd3d0">
-                <AiFillHtml5 />
-                <h4>HTML</h4>
+                <SiReact />
+                <h4>REACT</h4>
               </ColoredBox>
               <ColoredBox color="#ffc107">
-                <IoLogoCss3 />
-                <h4>CSS</h4>
+                <SiNextdotjs />
+                <h4>NEXTJS</h4>
               </ColoredBox>
               <ColoredBox color="#feccb5">
-                <SiJavascript />
-                <h4>JAVASCRIPT</h4>
-              </ColoredBox>
-              <ColoredBox color="#92b5ff">
                 <SiTypescript />
                 <h4>TYPESCRIPT</h4>
               </ColoredBox>
               <ColoredBox color="#c4d39b">
-                <SiReact />
-                <h4>REACT</h4>
+                <SiTailwindcss />
+                <h4>TAILWIND</h4>
               </ColoredBox>
-              <ColoredBox color="#d2ceff">
-                <TbBrandNextjs />
-                <h4>NEXTJS</h4>
+              <ColoredBox color="#ffc107">
+                <SiStorybook />
+                <h4>STORYBOOK</h4>
               </ColoredBox>
-              <ColoredBox color="#9bd3d0">
-                <IoLogoNodejs />
+              <ColoredBox color="#92b5ff">
+                <AiFillHtml5 />
+                <h4>HTML</h4>
+              </ColoredBox>
+              <ColoredBox color="#c4d39b">
+                <IoLogoCss3 />
+                <h4>CSS</h4>
+              </ColoredBox>
+
+              {/* Backend Skills */}
+              <ColoredBox color="#feccb5">
+                <SiNodedotjs />
                 <h4>NODEJS</h4>
               </ColoredBox>
               <ColoredBox color="#ffc107">
                 <SiExpress />
                 <h4>EXPRESS</h4>
               </ColoredBox>
-              <ColoredBox color="#feccb5">
+              <ColoredBox color="#9bd3d0">
                 <SiMysql />
-                <h4>SQL</h4>
+                <h4>MYSQL</h4>
               </ColoredBox>
-              <ColoredBox color="#92b5ff">
+
+              {/* Testing & Tools */}
+              <ColoredBox color="#feccb5">
                 <SiJest />
                 <h4>JEST</h4>
+              </ColoredBox>
+              <ColoredBox color="#92b5ff">
+                <SiGit />
+                <h4>GIT</h4>
+              </ColoredBox>
+              <ColoredBox color="#92b5ff">
+                <SiReacthookform />
+                <h4>REACT HOOK FORM</h4>
+              </ColoredBox>
+              <ColoredBox color="#c4d39b">
+                <SiSequelize />
+                <h4>SEQUELIZE</h4>
               </ColoredBox>
             </div>
             <motion.div
@@ -98,24 +104,12 @@ const SkillsSection = () => {
           <h5>MUI</h5>
         </div>
         <div className={styles.child}>
-          <SiReacthookform />
-          <h5>REACT HOOK FORM</h5>
-        </div>
-        <div className={styles.child}>
-          <SiSequelize />
-          <h5>SEQUELIZE</h5>
-        </div>
-        <div className={styles.child}>
           <SiSwiper />
           <h5>SWIPER</h5>
         </div>
         <div className={styles.child}>
           <SiScrollreveal />
           <h5>SCROLLREVEALJS</h5>
-        </div>
-        <div className={styles.child}>
-          <SiGit />
-          <h5>GIT</h5>
         </div>
         <div className={styles.child}>
           <GiDonut />

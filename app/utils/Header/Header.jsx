@@ -42,17 +42,17 @@ const Header = () => {
           </div>
           <div className={styles.sections}>
             <div className={`${styles.hide} ${styles.line}`}>
-              <Link href="#skills">
+              <Link href="/#skills">
                 <span>SKILLS</span>
               </Link>
             </div>
             <div className={`${styles.hide} ${styles.line}`}>
-              <Link href="#portfolio">
+              <Link href="/#portfolio">
                 <span>PROJECTS</span>
               </Link>
             </div>
             <div className={`${styles.hide} ${styles.line}`}>
-              <Link href="#contact">
+              <Link href="/#contact">
                 <span>CONTACT</span>
               </Link>
             </div>

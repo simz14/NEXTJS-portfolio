@@ -10,18 +10,8 @@ const ContactSection = () => {
       <Container>
         <div className={styles.contentWrapper}>
           <h1 className={styles.title}>CONTACT ME</h1>
-          <h2 className={styles.info}>
-            ! The service is currently unavailable !
-          </h2>
           <div className={styles.content}>
-            <ContactForm />
             <div className={styles.contacts}>
-              <div className={styles.contact}>
-                <ColoredBox color={"#fec447"}>
-                  <FaPhoneAlt />
-                </ColoredBox>
-                <h4>+421 917 898 084</h4>
-              </div>
               <div className={styles.contact}>
                 <ColoredBox color={"#feccb5"}>
                   <FaEnvelope />

@@ -23,7 +23,7 @@ const ProjectBox = ({
   return (
     <div className={styles.boxWrapper}>
       <div className={styles.box}>
-        <Image src={image} alt="project" />
+        <Image width={480} src={image} alt="project"/>
         <div className={styles.text}>
           <div className={styles.badges}>
             {tech.map((item) => {
@@ -36,21 +36,21 @@ const ProjectBox = ({
           </div>
           <h2>{title}</h2>
           <span>{description}</span>
-          <div className={styles.pulsingBox}>
+          {data&&<div className={styles.pulsingBox}>
             <div className={styles.pulsing}></div>
             <div>{getLines(Object.entries(data.languages))} lines of code</div>
-          </div>
-          <div className={styles.pulsingBox}>
+          </div>}
+          {data&&<div className={styles.pulsingBox}>
             <div className={styles.pulsing}></div>
-            <div>{data.commits} commits</div>
-          </div>
+          <div>{data.commits} commits</div>
+          </div>}
 
           <div className={styles.buttonsWrapper}>
-            <a target="_blank" href={github}>
+            {github&&<a target="_blank" href={github}>
               <ButtonExtra>
                 <h3>GitHub</h3>
               </ButtonExtra>
-            </a>
+            </a>}
 
             <a target="_blank" href={demo}>
               <ButtonExtra>

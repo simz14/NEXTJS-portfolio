@@ -110,16 +110,16 @@ const TimelineSection = () => {
               "After few months of making projects in React, I decided to learn NextJS and concepts of SSR and server components in React."
             }
           />
-          <TimelineBox
-            classnameWrapper={styles.boxWrapper}
-            classnameBox={styles.box}
-            classnameline={styles.line}
-            classnameDot={styles.dot}
-            date={"Present"}
-            title={"Practicing and looking for a job opportunity"}
-            description={"Buildinig projects in NextJs."}
-            left={true}
-          />
+<TimelineBox
+  classnameWrapper={styles.boxWrapper}
+  classnameBox={styles.box}
+  classnameline={styles.line}
+  classnameDot={styles.dot}
+  date={"Present"}
+  title={"Freelancer & Working at Monevis"}
+  description={"Currently working at Monevis and open to collaborating on interesting projects."}
+  left={true}
+/>
         </div>
       </Container>
     </div>

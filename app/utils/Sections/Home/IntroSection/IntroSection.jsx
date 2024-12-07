@@ -12,7 +12,6 @@ const IntroSection = () => {
           <div className={styles.introtext}>
             <h4>HI, MY NAME IS SIMONA</h4>
             <h1>
-              I love
               <TypeWriterComponent />
             </h1>
             <p>Based in Trnava, Slovakia</p>
